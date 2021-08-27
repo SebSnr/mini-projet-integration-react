@@ -1,0 +1,46 @@
+.overview {
+	width: 100%;
+	table {
+		width: 100%;
+		thead {
+			th {
+				text-align: left;
+				border-bottom: solid 1.5px lighten($color: $color-primary, $amount: 55);
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+		}
+		tbody,
+		tfoot {
+			font-size: 1rem;
+			font-weight: 400;
+
+			th {
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				font-size: 1rem;
+				font-weight: 500;
+			}
+		}
+		tbody {
+			th {
+				padding-top: 2rem;
+			}
+		}
+	}
+
+	.circle-border {
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -34%);
+			width: 58px;
+			height: 58px;
+			border: solid 1.5px lighten($color: $color-primary, $amount: 55);
+			border-radius: 50%;
+		}
+	}
+}
