@@ -1,21 +1,26 @@
 .overview {
 	width: 100%;
+	margin-bottom: 1rem;
 	table {
 		width: 100%;
+		border-collapse: collapse;
 		thead {
 			th {
 				text-align: left;
 				border-bottom: solid 1.5px lighten($color: $color-primary, $amount: 55);
-				font-size: 1.5rem;
-				font-weight: 600;
+				h2 {
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
 			}
 		}
 		tbody,
 		tfoot {
 			font-size: 1rem;
 			font-weight: 400;
-
+			td,
 			th {
+				text-align: center;
 				padding-top: 1rem;
 				padding-bottom: 1rem;
 				font-size: 1rem;
@@ -23,7 +28,7 @@
 			}
 		}
 		tbody {
-			th {
+			td {
 				padding-top: 2rem;
 			}
 		}
