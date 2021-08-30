@@ -72,6 +72,7 @@ export default function Ingredients() {
 					</tr>
 				</tbody>
 			</table>
+			List of the recipe ingredients
 		</div>
 	)
 }
